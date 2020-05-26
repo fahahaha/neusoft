@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        				   https://www.springframework.org/schema/beans/spring-beans.xsd
+        				   http://mybatis.org/schema/mybatis-spring
+        				   http://mybatis.org/schema/mybatis-spring.xsd">
+
+
+    <!--整合mybatis
+            1.使用spring管理mybatis所有组件，比如mapper接口
+            记住SqlSessionFactoryBean这个类
+            2.使用spring事务处理
+    -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="configLocation" value="classpath:mybatis-config.xml"></property>
+    </bean>
+    <!--扫描mapper接口，注意引入命名空间-->
+    <mybatis:scan base-package="lingnan.mapper"/>
+
+</beans>
