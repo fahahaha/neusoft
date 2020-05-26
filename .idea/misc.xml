@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/gitdemo1/pom.xml" />
+        <option value="$PROJECT_DIR$/gitdemo2/pom.xml" />
+        <option value="$PROJECT_DIR$/work01importexcel/pom.xml" />
       </list>
     </option>
   </component>

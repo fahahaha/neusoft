@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/gitdemo1/gitdemo1.iml" filepath="$PROJECT_DIR$/gitdemo1/gitdemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gitdemo2/gitdemo2.iml" filepath="$PROJECT_DIR$/gitdemo2/gitdemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work01importexcel/work01importexcel.iml" filepath="$PROJECT_DIR$/work01importexcel/work01importexcel.iml" />
     </modules>
   </component>
 </project>
