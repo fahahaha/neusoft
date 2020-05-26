@@ -1,0 +1,28 @@
+spring:
+  application:
+   name: work01importexcel
+#数据库配置
+#必须把username前面的data-去掉
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/hotelbookidea?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8888
+Price:
+  id: 100
+  name: 吴鸿发
+  bj: 17外包1
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  config-location: classpath:mybatis-config.xml
+  type-aliases-package: com.lingnan.entity
+
+
+
+
+#driver=com.mysql.jdbc.Driver
+   #url=jdbc:mysql://localhost:3306/hotelbook?useUnicode=true&characterEncoding=utf8
+   #user=root
+   #password=123456
